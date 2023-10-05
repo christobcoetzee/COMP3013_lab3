@@ -1,0 +1,86 @@
+:root {
+	/* fonts */
+	--font: 'Roboto', sans-serif;
+
+	/* spacing */
+	--spacing: 1rem;
+	--spacing--s: 0.5rem;
+	--spacing--xxs: 0.25rem;
+
+	/* lists */
+	--list-padding--left: 0.75em;
+	--list-margin--left: var(--spacing);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--font);
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol,
+ul {
+	margin-left: var(--list-margin--left);
+	padding-bottom: var(--spacing);
+	padding-left: var(--list-padding--left);
+}
+
+ul {
+	list-style: disc;
+}
+
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.album {
+	display: flex;
+	padding: var(--spacing);
+}
+
+.album__detail {
+	flex: 1;
+	margin-left: var(--spacing);
+	order: 2;
+}
+
+.album__title {
+	font-size: 1.5em;
+	padding-bottom: var(--spacing);
+}
+
+
+.index {
+	margin: 0;
+	padding: 0;
+}
+
+.index__album {
+	align-items: center;
+	display: flex;
+	margin: var(--spacing--s) 0;
+}
+
+.index__album img {
+	border-radius: 100%;
+	height: 40px;
+	margin-right: var(--spacing);
+	width: 40px;
+}
+
+
+.nav {
+	order: 2;
+	padding: var(--spacing);
+}
